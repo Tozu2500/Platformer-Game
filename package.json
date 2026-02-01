@@ -1,9 +1,18 @@
 {
+  "name": "platformer-game",
+  "version": "1.0.0",
+  "description": "A Mario-style platformer game",
+  "main": "dist/main.js",
+  "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc --watch"
   },
+  "keywords": ["game", "platformer", "typescript"],
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^25.2.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.3.3"
   }
 }
