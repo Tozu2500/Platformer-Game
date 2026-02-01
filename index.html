@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platformer Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui-overlay">
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 3</div>
+            <div id="level">Level: 1</div>
+        </div>
+        <div id="game-over" class="hidden">
+            <h1>Game Over!</h1>
+            <p>Final score: <span id="final-score">0</span></p>
+            <button id="restart-btn">Restart</button>
+        </div>
+        <div id="level-complete" class="hidden">
+            <h1>Level Complete!</h1>
+            <p>Score: <span id="level-score">0</span> </p>
+            <button id="next-level-btn">Next Level</button>
+        </div>
+        <div id="instructions">
+            <p>Arrow Keys: Move | Space: Jump | P: Pause</p>
+        </div>
+    </div>
+    <script type="module" src="dist/main.js"></script>
+</body>
+</html>
