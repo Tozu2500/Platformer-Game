@@ -1,4 +1,4 @@
-import { TileType, Tile } from './types';
+import { TileType, Tile } from './types.js';
 
 export class TileMap {
     public static readonly TILE_SIZE = 32;

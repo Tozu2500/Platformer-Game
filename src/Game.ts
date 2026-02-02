@@ -1,11 +1,11 @@
-import { Player } from './Player';
-import { Enemy, EnemyType } from './Enemy';
-import { TileMap } from './TileMap';
-import { Level } from './Level';
-import { Input } from './Input';
-import { Camera } from './Camera';
-import { Physics } from './Physics';
-import { TileType } from './types';
+import { Player } from './Player.js';
+import { Enemy, EnemyType } from './Enemy.js';
+import { TileMap } from './TileMap.js';
+import { Level } from './Level.js';
+import { Input } from './Input.js';
+import { Camera } from './Camera.js';
+import { Physics } from './Physics.js';
+import { TileType } from './types.js';
 
 export class Game {
     private canvas: HTMLCanvasElement;

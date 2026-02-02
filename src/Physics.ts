@@ -1,4 +1,4 @@
-import { GameObject, Velocity } from './types';
+import { GameObject, Velocity } from './types.js';
 
 export class Physics {
     public static readonly GRAVITY = 0.6;

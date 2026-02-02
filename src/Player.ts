@@ -1,6 +1,6 @@
-import { GameObject, Velocity } from './types';
-import { Physics } from './Physics';
-import { Input } from './Input'
+import { GameObject, Velocity } from './types.js';
+import { Physics } from './Physics.js';
+import { Input } from './Input.js'
 
 export class Player implements GameObject {
     public x: number;

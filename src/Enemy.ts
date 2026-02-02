@@ -1,5 +1,5 @@
-import { GameObject, Velocity } from './types';
-import { Physics } from './Physics';
+import { GameObject, Velocity } from './types.js';
+import { Physics } from './Physics.js';
 
 export enum EnemyType {
     GOOMBA,
