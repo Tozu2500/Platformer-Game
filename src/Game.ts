@@ -347,4 +347,20 @@ export class Game {
 
         this.loadLevel(this.currentLevel);
     }
+
+    private loadLevel(levelNumber: number): void {
+        const levelData = Level.getLevelData(levelNumber);
+        this.tileMap = new TileMap(levelData.tiles);
+        this.player = new Player(levelData.playerStart.x, levelData.playerStart.y);
+        this.player.lives = Math.max(this.player.lives, 3);
+        this.spawnEnemies(levelData.enemySpawns);
+        this.collectedCoins.clear();
+
+        this.camera = new Camera(
+            this.canvas.width,
+            this.canvas.height,
+            this.tileMap.width * TileMap.TILE_SIZE,
+            this.tileMap.height * TileMap.TILE_SIZE
+        );
+    }
 }
